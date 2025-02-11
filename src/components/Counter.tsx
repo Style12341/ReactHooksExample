@@ -20,11 +20,11 @@ function Counter() {
   return (
     <div>
       <h1>{count}</h1>
-      <div style = {{ display: "flex", justifyContent: "center", gap:"10px",paddingBottom: "10px" }}>
-        <button onClick={() => dispatch({ event: "increment" })}>+</button>
-        <button onClick={() => dispatch({ event: "decrement" })}>-</button>
-        <button onClick={() => dispatch({ event: "increment", amount: 5 })}>+5</button>
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px", paddingBottom: "10px" }}>
         <button onClick={() => dispatch({ event: "decrement", amount: 5 })}>-5</button>
+        <button onClick={() => dispatch({ event: "decrement" })}>-</button>
+        <button onClick={() => dispatch({ event: "increment" })}>+</button>
+        <button onClick={() => dispatch({ event: "increment", amount: 5 })}>+5</button>
       </div>
     </div>
   );
