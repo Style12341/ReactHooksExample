@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* Inherit background and text colors */
+  background-color: inherit;
+  color: inherit;
 }
 
 .logo {
@@ -35,8 +38,14 @@
 
 .card {
   padding: 2em;
+  /* Inherit background and text colors */
+  background-color: inherit;
+  color: inherit;
 }
 
 .read-the-docs {
   color: #888;
+}
+body.dark .read-the-docs {
+  color: #ccc;
 }
